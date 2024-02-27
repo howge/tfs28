@@ -5,23 +5,10 @@
 ```
 #cd /opt/
 #git clone -b v1.0.0 https://github.com/howge/tfs28.git
-#mkdir test && cd test
-#go mod init test
-#go work init
-#go work use .
-#go work use ../tfs28
-#vim main.go
+#go run main.go
 ```
 #内容如下:
 ```
-package main
-
-import (
-	"fmt"
-
-	config "github.com/howge/tfs28/config"
-)
-
 #测试文件是否能正常使用
 func main() {
 	c := config.FileSystemStoragePathSourceConfig{}
