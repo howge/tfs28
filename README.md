@@ -7,15 +7,7 @@
 #git clone -b v1.0.0 https://github.com/howge/tfs28.git
 #go run main.go
 ```
-#内容如下:
-```
-#测试文件是否能正常使用
-func main() {
-	c := config.FileSystemStoragePathSourceConfig{}
-	fmt.Println(c)
-}
 
-```
 
 
 - 根据tfserving描述，只需要将核心proto文件通过protoc 转成go文件即可，可以分为如下几步：
